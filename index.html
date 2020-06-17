@@ -1,85 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<body style="background-color:thistle">
-<title>Baking</title>
+<title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
-
+body {
+  background-image: url('79_dots_brown.jpg');
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* header */
+/* Style the header */
 header {
-  background-color: lightcyan;
+  background-color: none;
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: brown;
-
+  color: white;
 }
 
-/*flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* menu */
+/* Create two columns/boxes that floats next to each other */
 nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: thistle;
+  float: center;
+  width: 100%;
+  background: #ccc;
   padding: 20px;
 }
 
-/* list inside the menu */
+/* Style the list inside the menu */
 nav ul {
+text-align: left;
+  list-style-type: none;
   padding: 0;
 }
-
-/* Style  content */
 article {
-  float: right;
-  padding: 20px;
-  width: 80%;
-  background-color: lavenderblush;
-  padding: 10px;
-}
+  float: left;
+  padding: 0px;
+  width: 10%;
+  background-color: none;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
 
 
 }
 
-/*  layout */
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
+   article, nav {
+    width: 100%;
+    height: auto;
   }
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+}
 
+li {
+  float: right;
+}
 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
 }
 </style>
 </head>
 <body>
-
-<header>
-  <h2>Baking</h2>
-</header>
-
+  <article>
+    <h1>Baking</h1>
+  </article>
 <section>
-  <nav>
-  <p><u> Recipes</u></p>
-    <ul>
-      <li><a href= bc.html>Brownie cake</a></li>
-      <li><a href= bbc.html>Blueberry crumble cake</a></li>
-    </ul>
-  </nav>
+
+<ul>
+  <li><a href="bcc.html">Blueberry crumble cake</a></li>
+  <li><a href="bc.html">Brownie cake</a></li>
+  <li><a href="index.html">Home</a></li>
+
+</ul>
+  
+
+</section>
+<header>
+<style>
+
+  header {
+  border: 5px solid white;
+}
+
+</style>
+  <h2>Baking</h2>
+    <h5>recipes</h5>
+
+</header>
+</body>
   
  
