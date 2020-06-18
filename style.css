@@ -4,13 +4,13 @@ body{
 	margin: 0;
 }
 .indexBody{
-	background-image: url( "../IMG/cake.jpg");
+  background-image: url('79_dots_brown.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .navbar {
-	background-color: black;
+	background-color: none;
 	overflow: hidden;
 
 }
@@ -27,13 +27,13 @@ body{
 
 .navbar a:hover {
 	background-color: #F13BF6;
-	color: black;
+	color: none;
 	transition: 0.5s;
 	filter: opacity(80%)
 }
 
 .navbar a.active {
-	background-color: #FE7FFF;
+	background-color: none;
 	color: white;
 }
 
@@ -44,14 +44,14 @@ body{
 .baking{
 	text-align: center;
 	margin: 30vh 60vh 0 60vh;
-	border: solid 4px black;
+	border: solid 4px white;
 	font-size: 35px;
 	font-family: Georgia, serif;
 }
 a{
 	display: block;
 	text-decoration: none;
-	color: #5F1440;
+	color: none;
 	font-weight: 600;
 }
 .menu{
@@ -61,7 +61,7 @@ a{
 }
 
 .container {
-	background-image: url("../IMG/blueberry.jpg");
+	background-image: url('bcc.jpg');
 	height: 280px;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -71,7 +71,7 @@ a{
   	color: white;
 }
 .container2{
-	background-image: url("../IMG/kolac.jpg");
+	background-image: url('bc.jpg');
 	height: 280px;
 	background-repeat: no-repeat;
 	width: 100%;
